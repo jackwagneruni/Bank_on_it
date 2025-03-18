@@ -1,5 +1,8 @@
 # Bank-On-It
 
+public static void main(String[] args) {
+
+}
 
 interface HasMenu 
   string menu()
@@ -91,4 +94,3 @@ class Admin extends User
     void startAdmin()
 
 
-    
