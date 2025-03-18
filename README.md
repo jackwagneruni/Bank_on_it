@@ -37,21 +37,25 @@ class SavingsAccount extends CheckingAccount
     double getInterestRate()
 
 
-class SavingsAccount extends CheckingAccount
+abstract class User implements HasMenu, Serializable
 
-    double interestRate
+    string userName
+    string PIN
 
-    main()
-    calcInterest()
-    void setInterestRate()
-    double getInterestRate()
+    boolean login()
+    boolean login(userName, PIN)
+    void setUserName(userName)
+    string getUserName()
+    void setPIN(PIN)
+    string getPIN()
+    abstract string getReport()
 
 
 class Customer extends User
-  ====================
+
     CheckingAccount checking 
     SavingsAccount savings 
-  ====================
+
     void main()
     Customer()
     Customer(usernName, PIN)
